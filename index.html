@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nerfies: Deformable Neural Radiance Fields</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OnlineVPO: Align Video Diffusion Model with Online
+            Video-Centric Preference Optimization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://keunhong.com">Jiacheng Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://utkarshsinha.com">Jie Wu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://jonbarron.info">Weifeng Chen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://sofienbouaziz.com">Yatai Ji</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.danbgoldman.com">Xuefeng Xiao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~seitz/">Weilin Huang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.ricardomartinbrualla.com">Kai Han</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong,</span>
+            <span class="author-block"><sup>2</sup>ByteDance</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, the field of text-to-video (T2V) generation has made significant strides.  
+            Despite this progress, there is still a gap between theoretical advancements and practical application,  
+            amplified by issues like degraded image quality and flickering artifacts. Recent advancements in 
+            enhancing the video diffusion model (VDM) through feedback learning have shown promising results. 
+            However, these methods still exhibit notable limitations,  such as misaligned feedback and inferior scalability. 
+          </p>
+          <p>
+            To tackle these issues, we introduce <b>OnlineVPO</b>, a more efficient preference learning approach tailored 
+            specifically for video diffusion models. Our method features two novel designs, firstly, instead of directly 
+            using image-based reward feedback, we leverage the video quality assessment (VQA) model trained on synthetic data
+             as the reward model to provide distribution and modality-aligned feedback on the video diffusion model. 
+             Additionally, we introduce an online DPO algorithm to address the off-policy optimization and scalability issue 
+             in existing video preference learning frameworks. By employing the video reward model to offer concise video feedback on the fly,  
+             OnlineVPO offers effective and efficient preference guidance.
+          </p>
+          <p>
+            Extensive experiments on the open-source video-diffusion model demonstrate OnlineVPO as a simple yet effective and more importantly 
+            scalable preference learning algorithm for video diffusion models, offering valuable insights for future advancements in this domain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Motivation</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Video Feedback Learning</h3>
+        <div class="content has-text-justified">
+          <p>
+            We analyze and summarize the limitations of current video feedback learning methods as follows:
+          </p>
+        </div>
+        <img src="./static/images/teaser.png"
+              class="interpolation-image"
+              alt="Interpolation end reference image."/>  
+        <br/>
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">OnlineVPO - Video-Centric & Online Preference Optimization</h3>
+        <div class="content has-text-justified">
+          <p>
+            We propose OnlineVPO, a feedback learning method with more :
+          </p>
+        </div>
+        <img src="./static/images/pipeline.png"
+              class="interpolation-image"
+              alt="Interpolation end reference image."/>
+        <br/>
+        <!--/ Interpolating. -->
+        <div class="content has-text-justified">
+          <p>
+            The differences between our method and other methods are summarized as follows:
+          </p>
+        </div>
+        <img src="./static/images/method_comparison.png"
+              class="interpolation-image"
+              alt="Interpolation end reference image."/>
+        <br/>
+
+      </div>
+    </div>
+
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Quantitative Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            We report the performance comparison with other methods on VBench:
+          </p>
+        </div>
+        <img src="./static/images/quantative_results.png"
+              class="interpolation-image"
+              alt="Interpolation end reference image."/>
+        <br/>
+       
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Qualitative Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            We showcase some visual comparison example videos:
+          </p>
+        </div>
+        <img src="./static/images/quantative_results.png"
+              class="interpolation-image"
+              alt="Interpolation end reference image."/>
+        <br/>
+      </div>
+    </div>
+
+    
+
+    <!--/ Animation. -->
+
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The source code of this webpage is based on the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> Nerfies project webpage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
